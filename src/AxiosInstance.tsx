@@ -1,8 +1,8 @@
 import axios from "axios"
  const AxiosInstance = axios.create({
-    // baseURL:import.meta.env.AxiosBaseUrl,
-    baseURL:'http://localhost:4000'
-,    timeout:10000,
+    // baseURL:'http://localhost:4000',
+    baseURL:import.meta.env.VITE_AXIOS_BASE_URL,
+    timeout:10000,
     headers:{
         "Content-Type":'application/json'
     }
