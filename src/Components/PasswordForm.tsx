@@ -22,11 +22,11 @@ const PasswordForm = () => {
     ['number','Number ( 1234... )',setNumbers],
     ['sepcialCaractors','Special Characters ( !@#$%.. )',setSepecial]
   ]
-  // useEffect(() => {
-  //   gsap.fromTo('.Lottie', { x: '100%' }, { x: '0%', duration: 2, delay: 1 });
+  useEffect(() => {
+    gsap.fromTo('.Lottie', { x: '100%' }, { x: '0%', duration: 2, delay: 1 });
 
-  //   gsap.fromTo('.Form', { x: '-100%',opacity:0 }, { x: '0%',opacity:1, duration: 2, delay: 1 });
-  // }, []);
+    gsap.fromTo('.Form', { x: '-100%',opacity:0 }, { x: '0%',opacity:1, duration: 2, delay: 1 });
+  }, []);
   const generatePassword=(e:any)=>{
     e.preventDefault()
     const upperSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
