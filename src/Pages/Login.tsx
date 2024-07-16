@@ -13,7 +13,7 @@ const Login = () => {
         e.preventDefault()
        try {
         if(!email && !password ) return alert('Please fill the inputs')
-        const response:any = await AxiosInstance.post('http://localhost:4000/login',{email,password})
+        const response:any = await AxiosInstance.post('/login',{email,password})
         if(response.data.success){          
             localStorage.setItem('token',response.data.token)
             const token:any = response.data.token
