@@ -1,7 +1,7 @@
 import axios from "axios"
  const AxiosInstance = axios.create({
-    baseURL:'https://password-generator-backend-six.vercel.app',
-    // baseURL:import.meta.env.VITE_AXIOS_BASE_URL,
+    // baseURL:'https://password-generator-backend-six.vercel.app',
+    baseURL:import.meta.env.VITE_AXIOS_BASE_URL,
     timeout:10000,
     headers:{
         "Content-Type":'application/json'
